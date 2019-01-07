@@ -11,7 +11,7 @@
 	<groupId>com.ccq</groupId>
 	<artifactId>rpc_netty_consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rpc_netty_client</name>
+	<name>rpc_netty_consumer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
