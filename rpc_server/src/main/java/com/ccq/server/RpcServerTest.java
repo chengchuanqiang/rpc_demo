@@ -12,6 +12,7 @@ public class RpcServerTest {
 
     public static void main(String[] args) {
         Server server = new ServerCenter(9999);
+        // 可以使用扫描的方式，将所有的提供的接口，在项目初始化的时候进行注册操作
         server.register(HelloService.class, HelloServiceImpl.class);
         server.start();
     }
