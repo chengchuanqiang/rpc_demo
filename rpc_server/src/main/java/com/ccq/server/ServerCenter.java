@@ -15,8 +15,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @Author: ChengChuanQiang
  * @Description: 服务中心实现
+ * @Author: ChengChuanQiang
  * @Date: Created in 2019/1/6 11:15
  */
 public class ServerCenter implements Server {
@@ -31,6 +31,7 @@ public class ServerCenter implements Server {
     // 连接池 线程个数：服务器cpu个数
     private static ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
+    // 运行标记位
     private static boolean isRunning = false;
 
     public ServerCenter(int port) {

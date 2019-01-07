@@ -11,7 +11,7 @@ import java.net.InetSocketAddress;
  */
 public class RpcClientTest {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) {
         HelloService helloService = Client.getRemoteProxyObj(HelloService.class, new InetSocketAddress(9999));
         String res = helloService.sayHi("ccq");
         System.out.println(res);
