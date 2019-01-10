@@ -4,7 +4,6 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.ccq.api.DemoService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /********************************
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @Reference(url = "dubbo://192.168.233.1:12345")
+    @Reference(version = "1.0.0", url = "dubbo://192.168.233.1:12345")
     private DemoService demoService;
 
     @RequestMapping("sayHello/{name}")
